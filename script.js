@@ -24,9 +24,9 @@
 let API2 = "https://restcountries.eu/rest/v2/all";
 
 fetch(API2, {method:"GET"})
-.then(result => result.json())
-then(result =>
-    console.log(result))
-.catch(error => {
-    console.log(error);
+.then(result2 => result2.json())
+.then(result2 =>
+    console.log(result2))
+.catch(error2 => {
+    console.log(error2);
 })
