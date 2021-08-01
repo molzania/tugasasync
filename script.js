@@ -4,6 +4,8 @@
 // Tampilkan data menggunakan DOM minimal nama, gambar profile, bio, followers, followings
 // Tampilkan serapih mungkin menggunakan CSS
 
+let API1 = "https://api.github.com/users/molzania";
+let profileContainer
 // const getDataAPI1 = () => {
 //     const API1 = "https://api.github.com/users/molzania";
 //     const option1 = {
