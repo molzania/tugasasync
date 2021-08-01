@@ -21,12 +21,21 @@
 // Gunakan async await
 // Tampilkan seluruh bendera negara dan nama negaranya ke dalam dom
 
+let countriesContainer = document.getElementById("countries");
+
 let API2 = "https://restcountries.eu/rest/v2/all";
 
 fetch(API2, {method:"GET"})
 .then(result2 => result2.json())
-.then(result2 =>
-    console.log(result2))
+.then(result2 => {
+    console.log(result2)
+    for (let b=0;b<=23;b++){
+        countriesContainer.innerHTML += `
+        <div id="flag"> 
+        <img src='${result2[b].flag}'/>
+        <span>${result2[b].name}</span>
+         </div>` }
+})
 .catch(error2 => {
     console.log(error2);
 })
