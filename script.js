@@ -14,18 +14,20 @@
 //     .catch(error => {console.log(error)}),
 
 // )}
+console.log("hello world");
 
 const getDataAPI1 = () => {
     const API1 = "https://api.github.com/users/molzania";
     const option1 = {
-        method: "GET";
+        method: "GET"
     }
     fetch(API1, option1)
-    .then(response => response.json()),
-    .then(result => console.log(result)),
-    .catch(error => console.log(error, "ERROR")),
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.log(error, "ERROR"))
 }
 
+getDataAPI1();
 
 //Soal 2
 // Ambil lah data dari API berikut “https://restcountries.eu/rest/v2/all”
