@@ -14,7 +14,6 @@
 //     .catch(error => {console.log(error)}),
 
 // )}
-console.log("hello world");
 
 const getDataAPI1 = () => {
     const API1 = "https://api.github.com/users/molzania";
