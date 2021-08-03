@@ -15,16 +15,16 @@
 
 // )}
 
-// const getDataAPI1 = () => {
-//     const API1 = "https://api.github.com/users/molzania";
-//     const option1 = {
-//         method: "GET";
-//     }
-//     fetch(API1, option1)
-//     .then(response => response.json()),
-//     .then(result => console.log(result)),
-//     .catch(error => console.log(error, "ERROR")),
-// }
+const getDataAPI1 = () => {
+    const API1 = "https://api.github.com/users/molzania";
+    const option1 = {
+        method: "GET";
+    }
+    fetch(API1, option1)
+    .then(response => response.json()),
+    .then(result => console.log(result)),
+    .catch(error => console.log(error, "ERROR")),
+}
 
 
 //Soal 2
