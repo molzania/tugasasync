@@ -15,6 +15,13 @@
 
 // )}
 
+let image = document.getElementById("gambar");
+let nama = document.getElementById("nama");
+let blog = document.getElementById("blog");
+let bio = document.getElementById("bio");
+let lokasi = document.getElementById("location");
+let twitter = document.getElementById("twitter")
+
 const getDataAPI1 = () => {
     const API1 = "https://api.github.com/users/molzania";
     const option1 = {
@@ -22,7 +29,19 @@ const getDataAPI1 = () => {
     }
     fetch(API1, option1)
     .then(response => response.json())
-    .then(result => console.log(result))
+    .then(result => {
+        console.log(result)
+    image.innerHTML = `<img src="${result.avatar_url}">`
+    nama.innerHTML = `<p>Name : ${result.name}</p>`
+    blog.innerHTML = `<p>Blog : ${result.blog}</p>`
+    lokasi.innerHTML = `<p>Lokasi : ${result.location}</p>`
+    twitter.innerHTML = `<p>Twitter : @${result.twitter_username}</p>`
+    bio.innerHTML = `<h4>Bio</h4>
+    <p>${result.bio}</p>`
+
+
+}
+    )
     .catch(error => console.log(error, "ERROR"))
 }
 
