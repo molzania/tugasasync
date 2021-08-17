@@ -60,12 +60,14 @@ fetch(API2, {method:"GET"})
 .then(result2 => result2.json())
 .then(result2 => {
     console.log(result2)
-    for (let b=0;b<=23;b++){
+    for (let b=0;b < result2.length;b++){
         countriesContainer.innerHTML += `
-        <div id="flag"> 
-        <img src='${result2[b].flag}'/>
-        <span>${result2[b].name}</span>
-         </div>` }
+        <div id="flag">
+        <img src='${result2[b].flag}' alt="bendera"/>
+        <p id="country-name">${result2[b].name}</p>
+        </div>
+
+        ` }
 })
 .catch(error2 => {
     console.log(error2);

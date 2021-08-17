@@ -1,3 +1,51 @@
+<<<<<<< HEAD
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+#countries {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: pink;
+}
+
+#flag {
+    width:250px;
+    height:200px;
+    margin: 10px;
+}
+
+#flag img {
+    width: 250px;
+    margin: 5px;
+    height: 150px;
+    background-color: #fffcf6;
+}
+
+#country-name {
+    font-size: 14px;
+}
+
+ 
+header {
+background-color: #f4edc2;
+text-align: center;    
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f6cbde;
+=======
 body {
     font-family: 'Roboto', sans-serif;
     margin: auto;
@@ -42,4 +90,5 @@ footer {
     font-size: 14px;
     text-align: center;
     background-color: #f6cbde;
+>>>>>>> c57b8e7ecf240f677da040326c36d68903b0ee5e
 }
